@@ -1,0 +1,16 @@
+INSERT INTO DISCIPLINAS (ID, NOME, CODIGO, VAGAS) VALUES
+('2722f32f-ffef-4a93-8104-34ea0b429dd4','Banco de dados', '001', 25),
+('2722f33f-ffef-4a93-8104-34ea0b429dd4','Lógica de programação', '002', 25),
+('2722f34f-ffef-4a93-8104-34ea0b429dd4','Modelagem de dados', '003', 25),
+('2722f35f-ffef-4a93-8104-34ea0b429dd4','Web Services', '004', 25),
+('2722f36f-ffef-4a93-8104-34ea0b429dd4','Engenharia de software', '005', 25),
+('2722f37f-ffef-4a93-8104-34ea0b429dd4','Sistemas operacionais', '006', 25),
+('2722f38f-ffef-4a93-8104-34ea0b429dd4','Projetos', '007', 25),
+('2722f39f-ffef-4a93-8104-34ea0b429dd4','Sistemas distribuídos', '008', 25),
+('3722f31f-ffef-4a93-8104-34ea0b429dd4','POO 1', '009', 25),
+('4722f31f-ffef-4a93-8104-34ea0b429dd4','POO 2', '0010', 25),
+('5722f31f-ffef-4a93-8104-34ea0b429dd4','Programação para Web 1', '011', 25),
+('6722f31f-ffef-4a93-8104-34ea0b429dd4','Programação para Web 2', '012', 25),
+('7722f31f-ffef-4a93-8104-34ea0b429dd4','Matemática aplicada', '013', 25),
+('8722f31f-ffef-4a93-8104-34ea0b429dd4','Metodologia do trabalho científico', '014', 25),
+('9722f31f-ffef-4a93-8104-34ea0b429dd4','Empreendedorismo', '015', 25);
