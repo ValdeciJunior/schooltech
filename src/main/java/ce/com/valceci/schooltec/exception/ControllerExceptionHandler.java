@@ -23,8 +23,7 @@ public class ControllerExceptionHandler {
     @ResponseBody
     public ResponseEntity<ExceptionResponse> disciplinaNotFound(DisciplinaNotFound e) {
         log.error("DisciplinaNotFound");
-        List<AttributeMessage> attributeMessages = new ArrayList<>();
-        ExceptionResponse err = new ExceptionResponse(HttpStatus.NOT_FOUND, e.getMessage(), attributeMessages);
+        ExceptionResponse err = new ExceptionResponse(HttpStatus.NOT_FOUND, e.getMessage());
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(err);
     }
 	
@@ -47,7 +46,7 @@ public class ControllerExceptionHandler {
             String errorMessage = error.getDefaultMessage();
             attributeMessages.add(new AttributeMessage(fieldName, errorMessage));
         });
-        ExceptionResponse err = new ExceptionResponse(HttpStatus.BAD_REQUEST, "Validation failed.", attributeMessages);
+        ExceptionResponse err = new ExceptionResponse(HttpStatus.BAD_REQUEST, "Falha de validação.", attributeMessages);
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(err);
     }
 

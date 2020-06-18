@@ -20,6 +20,6 @@ public interface DisciplinaService {
 
 	Page<Disciplina> listar(Pageable pageable, PesquisaDisciplina pesquisa) throws DisciplinaNotFound;
 	
-	void uploadImage(MultipartFile file, String uuid) throws Exception;
+	String uploadImage(MultipartFile file, String uuid) throws Exception;
 
 }

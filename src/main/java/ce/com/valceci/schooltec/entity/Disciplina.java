@@ -39,6 +39,6 @@ public class Disciplina {
 	@Column(name ="vagas", nullable = false)
 	private Integer vagas;
 	
-	@Lob
-	private Byte[] imagem;
+	@Column(name = "imagem")
+	private String imagem;
 }

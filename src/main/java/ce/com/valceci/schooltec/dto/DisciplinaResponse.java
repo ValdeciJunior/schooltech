@@ -13,5 +13,5 @@ public class DisciplinaResponse {
 	
 	private Integer vagas;
 	
-	private Byte[] imagem;
+	private String imagem;
 }

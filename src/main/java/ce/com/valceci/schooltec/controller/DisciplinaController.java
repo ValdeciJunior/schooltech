@@ -78,10 +78,10 @@ public class DisciplinaController {
 	
 	@PatchMapping("/{uuid}/upload-image")
 	public ResponseEntity<?> handleFileUpload(@PathVariable("uuid") String uuid, @RequestParam("file") MultipartFile file, RedirectAttributes redirectAttributes) throws Exception {
-		service.uploadImage(file, uuid);
+		String url = service.uploadImage(file, uuid);
 		log.info("You successfully uploaded " + file.getOriginalFilename() + "!");
 		redirectAttributes.addFlashAttribute("message", "You successfully uploaded " + file.getOriginalFilename() + "!");
-		return ResponseEntity.noContent().build();
+		return ResponseEntity.ok(url);
 	}
 	
 }
