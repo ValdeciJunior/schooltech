@@ -1,0 +1,212 @@
+{
+	"info": {
+		"_postman_id": "c1842bf1-fb68-495a-b268-e25b3a5cc10f",
+		"name": "Trabalho",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nome\":\"Banco de dados\",\n\t\"codigo\":\"001\",\n\t\"vagas\":20\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/disciplinas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"disciplinas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/disciplinas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"disciplinas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET UUID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/disciplinas/ec348ac9-e9f1-4948-a688-06da621da3b4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"disciplinas",
+						"ec348ac9-e9f1-4948-a688-06da621da3b4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/disciplinas/ec348ac9-e9f1-4948-a688-06da621da3b4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"disciplinas",
+						"ec348ac9-e9f1-4948-a688-06da621da3b4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nome\":\"teste\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/disciplinas/97672ba7-d6f3-4ad7-9aa6-986b869aa19a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"disciplinas",
+						"97672ba7-d6f3-4ad7-9aa6-986b869aa19a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH - Upload-image",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/home/valdecijunior/Downloads/0de05aad4c308512c025859c5b3fc3a0.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/disciplinas/33702087-4c72-4f87-90ba-0ed7fbb4e9de/upload-image",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"disciplinas",
+						"33702087-4c72-4f87-90ba-0ed7fbb4e9de",
+						"upload-image"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Autenticacao",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\":\"user\", \n\t\"password\":\"password\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/authenticate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
